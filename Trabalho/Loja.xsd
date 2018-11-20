@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlsn="http://www.BikeOnTrack.pt/Loja"
+	targetNamespace="http://www.BikeOnTrack.pt/Loja"
+	elementFormDefault="qualified">
+
+	<xs:element name="id">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="name">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="loja">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Id" type="xs:integer"/>
+				<xs:element name="Nome" type= "xs:string"/>
+				<xs:element name="NIF" type="xs:integer"/>
+				<xs:element name="Morada" type="xs:string"/>
+				<xs:element name="Contacto" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

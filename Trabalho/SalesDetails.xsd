@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlsn="http://www.BikeOnTrack.pt/SalesDetails"
+	targetNamespace="http://www.BikeOnTrack.pt/SalesDetails"
+	xmlns:cl="http://www.BikeOnTrack.pt/Cliente"
+	xmlns:cd="http://www.BikeOnTrack.pt/CurrencyDetails"
+	xmlns:p="http://www.BikeOnTrack.pt/Produto"
+	xmlns:l="http://www.BikeOnTrack.pt/Loja"
+	elementFormDefault="qualified">
+
+	<xs:import schemaLocation="Cliente.xsd" namespace="http://www.BikeOnTrack.pt/Cliente"/>
+	<xs:import schemaLocation="CurrencyDetails.xsd" namespace="http://www.BikeOnTrack.pt/CurrencyDetails"/>
+	<xs:import schemaLocation="Produto.xsd" namespace="http://www.BikeOnTrack.pt/Produto"/>
+	<xs:import schemaLocation="Loja.xsd" namespace="http://www.BikeOnTrack.pt/Loja"/>
+
+
+
+	<xs:element name="salesdetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ReceiptID" type="xs:integer"/>
+				<xs:element name="OrderDate" type="xs:datetime"/>
+				<xs:element name="Customer" type="cl:cliente"/>
+				<xs:element name="CurrencyRateID" type="cd:id"/>
+				<xs:element name="SubTotal" type="xs:decimal"/>
+				<xs:element name="TaxAmt" type="xs:decimal"/>
+				<xs:element name="StoreID" type="l:id"/>
+				<xs:element name="StoreName" type="l:name"/>
+				<xs:element name="ReceiptLineID" type="xs:integer"/>
+				<xs:element name="Order" type="xs:integer"/>
+				<xs:element name="ProductID" type="p:id"/>
+				<xs:element name="UnitPrice" type="xs:decimal"/>
+				<xs:element name="LineTotal" type="xs:decimal"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
