@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.Formas.pt/texto"
+	targetNamespace="http://www.Formas.pt/texto"
+	xmlns:c="http://www.Formas.pt/CommonTypes"
+	elementFormDefault="qualified">
+	
+	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.Formas.pt/CommonTypes"/>
+
+	<xs:complexType name="texto" mixed="true">
+		<xs:sequence>
+			<xs:element name="cor" type="c:cor"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

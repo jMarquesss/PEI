@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentes xmlns="http://www.Formas.pt/componentes"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.Formas.pt/componentes componentesXSD.xsd"
+	xmlns:ci="http://www.Formas.pt/circulo"
+	xmlns:el="http://www.Formas.pt/elipse"
+	xmlns:li="http://www.Formas.pt/linha"
+	xmlns:te="http://www.Formas.pt/texto"
+	xmlns:re="http://www.Formas.pt/rectangulo"
+	>
+
+
+	<elipse>
+		<el:corFundo>vermelho</el:corFundo>
+		<el:corLinha>preto</el:corLinha>
+		<el:larguraLinha>30</el:larguraLinha>
+		<el:raioVertical>10</el:raioVertical>
+		<el:raioHorizontal>15</el:raioHorizontal>
+		<el:coordenadaXX>60</el:coordenadaXX>
+		<el:coordenadaYY>40</el:coordenadaYY>
+	</elipse>
+
+	<texto>
+		<te:cor>azul</te:cor>
+	</texto>
+
+
+
+	<circulo>
+		<ci:raio>43</ci:raio>
+		<ci:corFundo>amarelo</ci:corFundo>
+		<ci:corLinha>preto</ci:corLinha>
+		<ci:larguraLinha>322</ci:larguraLinha>
+		<ci:coordenadaXX>21</ci:coordenadaXX>
+		<ci:coordenadaYY>41</ci:coordenadaYY>
+	</circulo>
+
+	
+	<rectangulo>
+		<re:corFundo>verde</re:corFundo>
+		<re:corLinha> preto</re:corLinha>
+		<re:larguraLinha>31 </re:larguraLinha>
+		<re:comprimento>42 </re:comprimento>
+		<re:largura> 55</re:largura>
+	</rectangulo>
+
+	<linha>
+		<li:x1>10</li:x1>
+		<li:y1>11</li:y1>
+		<li:x2>42</li:x2>
+		<li:y2>45</li:y2>
+	</linha>
+
+</componentes>

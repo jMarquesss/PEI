@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://www.BikeOnTrack.pt/ReceiptInfo"
+	targetNamespace="http://www.BikeOnTrack.pt/ReceiptInfo"
+	xmlns:cd="http://www.BikeOnTrack.pt/CurrencyDetails"
+	elementFormDefault="qualified">
+
+	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
+
+	
+
+	<xs:element name="info">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DataInicio" type="xs:dateTime"/>
+				<xs:element name="DataFim" type="xs:dateTime"/>
+				<xs:element name="Currency" type="cd:FromCurrencyCode"/>
+				<xs:element name="OrderDate" type="xs:dateTime"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

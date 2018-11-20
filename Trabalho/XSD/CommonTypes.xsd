@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns="http://www.BikeOnTrack.pt/CommonTypes"
+targetNamespace="http://www.BikeOnTrack.pt/CommonTypes"
+elementFormDefault="qualified">
+
+	<xs:simpleType name="valor">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="15"/>
+			<xs:fractionDigits value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="texto">
+     	<xs:restriction base="xs:string">
+        	<xs:maxLength value="200"/>
+     	</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="code">
+     	<xs:restriction base="xs:string">
+        	<xs:maxLength value="3"/>
+     	</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="id">
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="10"/>
+			<xs:fractionDigits value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="number">
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="15"/>
+			<xs:fractionDigits value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

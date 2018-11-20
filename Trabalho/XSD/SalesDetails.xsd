@@ -6,31 +6,33 @@
 	xmlns:cd="http://www.BikeOnTrack.pt/CurrencyDetails"
 	xmlns:p="http://www.BikeOnTrack.pt/Produto"
 	xmlns:l="http://www.BikeOnTrack.pt/Loja"
+	xmlns:ct="http://www.BikeOnTrack.pt/CommonTypes"
 	elementFormDefault="qualified">
 
 	<xs:import schemaLocation="Cliente.xsd" namespace="http://www.BikeOnTrack.pt/Cliente"/>
 	<xs:import schemaLocation="CurrencyDetails.xsd" namespace="http://www.BikeOnTrack.pt/CurrencyDetails"/>
 	<xs:import schemaLocation="Produto.xsd" namespace="http://www.BikeOnTrack.pt/Produto"/>
 	<xs:import schemaLocation="Loja.xsd" namespace="http://www.BikeOnTrack.pt/Loja"/>
+	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
 
 
 
 	<xs:element name="salesdetails">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="ReceiptID" type="xs:integer"/>
+				<xs:element name="ReceiptID" type="ct:id"/>
 				<xs:element name="OrderDate" type="xs:datetime"/>
 				<xs:element name="Customer" type="cl:cliente"/>
 				<xs:element name="CurrencyRateID" type="cd:id"/>
 				<xs:element name="SubTotal" type="xs:decimal"/>
-				<xs:element name="TaxAmt" type="xs:decimal"/>
+				<xs:element name="TaxAmt" type="ct:valor"/>
 				<xs:element name="StoreID" type="l:id"/>
 				<xs:element name="StoreName" type="l:name"/>
-				<xs:element name="ReceiptLineID" type="xs:integer"/>
-				<xs:element name="Order" type="xs:integer"/>
+				<xs:element name="ReceiptLineID" type="ct:number"/>
+				<xs:element name="Order" type="ct:number"/>
 				<xs:element name="ProductID" type="p:id"/>
-				<xs:element name="UnitPrice" type="xs:decimal"/>
-				<xs:element name="LineTotal" type="xs:decimal"/>
+				<xs:element name="UnitPrice" type="ct:valor"/>
+				<xs:element name="LineTotal" type="ct:valor"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

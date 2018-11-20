@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<currencydetails xmlns="http://www.BikeOnTrack.pt/CurrencyDetails"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/CurrencyDetails CurrencyDetails.xsd"
+	>
+	<id>18</id>
+	<currencyRateDate>2002-05-30T09:00:00</currencyRateDate>
+	<fromCurrencyCode>EUR</fromCurrencyCode>
+	<toCurrencyCode>USD</toCurrencyCode>
+	<rateVal>1.004</rateVal>
+</currencydetails>

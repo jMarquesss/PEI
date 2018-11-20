@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<loja xmlns="http://www.BikeOnTrack.pt/Loja"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/Loja Loja.xsd"
+	>
+	<id>18</id>
+	<name>Joao</name>
+	<nif>267315228</nif>
+	<morada>ruamonte</morada>
+	<contactos>910052980</contactos>
+</loja>

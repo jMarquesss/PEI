@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-	xmlsn="http://www.BikeOnTrack.pt/Cliente"
+	xmlns="http://www.BikeOnTrack.pt/Cliente"
 	targetNamespace="http://www.BikeOnTrack.pt/Cliente"
-	xmlsn:ct="http://www.BikeOnTrack.pt/CommonTypes"
+	xmlns:ct="http://www.BikeOnTrack.pt/CommonTypes"
 	elementFormDefault="qualified">
 
 	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
@@ -10,7 +10,7 @@
 	<xs:element name="cliente">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="id" type="ct:ID"/>
+				<xs:element name="id" type="ct:id"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
