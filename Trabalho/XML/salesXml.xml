@@ -23,6 +23,8 @@
 	<clientType>
 		<c:cliente>
 			<c:id>17</c:id>
+			<c:nome>Pedro</c:nome>
+			<c:nif>241011647</c:nif>
 		</c:cliente>
 	</clientType>
 	<orderDate>2002-05-30T09:00:00</orderDate>

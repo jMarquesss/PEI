@@ -11,6 +11,8 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="id" type="ct:id"/>
+				<xs:element name="nome" type="ct:texto"/>
+				<xs:element name="nif" type="ct:nif"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
