@@ -14,7 +14,7 @@
 			<xs:sequence>
 				<xs:element name="salesTotal">
 					<xs:complexType>
-						<xs:sequence minOccurs="1" maxOccurs="100">
+						<xs:sequence minOccurs="1" maxOccurs="unbounded">
 							<xs:element ref="s:saleType"/>
 						</xs:sequence>
 					</xs:complexType>

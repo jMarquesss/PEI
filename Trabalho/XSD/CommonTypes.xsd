@@ -45,4 +45,9 @@ elementFormDefault="qualified">
 			<xs:pattern value="([0-9])*"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="nif">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{9}"/>
+		</xs:restriction>
+	</xs:simpleType>
 </xs:schema>

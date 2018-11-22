@@ -12,7 +12,7 @@
 			<xs:sequence>
 				<xs:element name="id" type="ct:id"/>
 				<xs:element name="name" type= "ct:texto"/>
-				<xs:element name="nif" type="ct:number"/>
+				<xs:element name="nif" type="ct:nif"/>
 				<xs:element name="morada" type="ct:texto"/>
 				<xs:element name="contactos" type="ct:number"/>
 			</xs:sequence>

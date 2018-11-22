@@ -22,7 +22,7 @@
 				<xs:element name="orderDate" type="xs:dateTime"/>
 				<xs:element name="line">
 					<xs:complexType>
-						<xs:sequence minOccurs="1" maxOccurs="5">
+						<xs:sequence minOccurs="1" maxOccurs="unbounded">
 							<xs:element ref="sl:saleline"/>
 						</xs:sequence>
 					</xs:complexType>
