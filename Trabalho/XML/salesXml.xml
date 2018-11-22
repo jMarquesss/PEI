@@ -7,19 +7,24 @@
 	xmlns:l="http://www.BikeOnTrack.pt/Loja"
 	xmlns:p="http://www.BikeOnTrack.pt/Produto"
 	xmlns:sl="http://www.BikeOnTrack.pt/SaleLine"
+	xmlns:cd="http://www.BikeOnTrack.pt/CurrencyDetails"
 	>
 
 	<id>16</id>
-	<l:loja>
-		<l:id>18</l:id>
-		<l:name>Joao</l:name>
-		<l:nif>267315228</l:nif>
-		<l:morada>ruamonte</l:morada>
-		<l:contactos>910052980</l:contactos>
-	</l:loja>
-	<c:cliente>
-		<c:id>17</c:id>
-	</c:cliente>
+	<lojaType>
+		<l:loja>
+			<l:id>18</l:id>
+			<l:name>Joao</l:name>
+			<l:nif>267315228</l:nif>
+			<l:morada>ruamonte</l:morada>
+			<l:contactos>910052980</l:contactos>
+		</l:loja>
+	</lojaType>
+	<clientType>
+		<c:cliente>
+			<c:id>17</c:id>
+		</c:cliente>
+	</clientType>
 	<orderDate>2002-05-30T09:00:00</orderDate>
 	<line>
 		<sl:saleline>
@@ -38,7 +43,7 @@
 			<sl:lineTotal>30</sl:lineTotal>
 		</sl:saleline>
 		<sl:saleline>
-			<sl:id>10</sl:id>
+			<sl:id>13</sl:id>
 			<sl:produtos>
 				<p:produto>
 					<p:id>15</p:id>
@@ -48,26 +53,20 @@
 					<p:price>16.5</p:price>
 				</p:produto>
 			</sl:produtos>
-			<sl:unitPrice>30</sl:unitPrice>
-			<sl:order>1</sl:order>
-			<sl:lineTotal>40</sl:lineTotal>
-		</sl:saleline>
-		<sl:saleline>
-			<sl:id>10</sl:id>
-			<sl:produtos>
-				<p:produto>
-					<p:id>15</p:id>
-					<p:name>ricardo</p:name>
-					<p:productNumber>18</p:productNumber>
-					<p:color>azul</p:color>
-					<p:price>16.5</p:price>
-				</p:produto>
-			</sl:produtos>
-			<sl:unitPrice>30</sl:unitPrice>
-			<sl:order>1</sl:order>
-			<sl:lineTotal>40</sl:lineTotal>
+			<sl:unitPrice>10</sl:unitPrice>
+			<sl:order>3</sl:order>
+			<sl:lineTotal>30</sl:lineTotal>
 		</sl:saleline>
 	</line>
+	<currency>
+		<cd:currencydetails>
+			<cd:id>18</cd:id>
+			<cd:currencyRateDate>2002-05-30T09:00:00</cd:currencyRateDate>
+			<cd:fromCurrencyCode>EUR</cd:fromCurrencyCode>
+			<cd:toCurrencyCode>USD</cd:toCurrencyCode>
+			<cd:rateVal>1.004</cd:rateVal>
+		</cd:currencydetails>
+	</currency>
 	<taxAmt>16.5</taxAmt>
 	<subTotal>16.5</subTotal>
 	<total>16.5</total>

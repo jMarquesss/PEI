@@ -14,16 +14,20 @@
 	<salesTotal>
 		<s:saleType>
 			<s:id>16</s:id>
-			<l:loja>
-				<l:id>18</l:id>
-				<l:name>loja joao</l:name>
-				<l:nif>267315228</l:nif>
-				<l:morada>rua do monte n-124</l:morada>
-				<l:contactos>910052980</l:contactos>
-			</l:loja>
-			<c:cliente>
-				<c:id>17</c:id>
-			</c:cliente>
+			<s:lojaType>
+				<l:loja>
+					<l:id>18</l:id>
+					<l:name>Joao</l:name>
+					<l:nif>267315228</l:nif>
+					<l:morada>ruamonte</l:morada>
+					<l:contactos>910052980</l:contactos>
+				</l:loja>
+			</s:lojaType>
+			<s:clientType>
+				<c:cliente>
+					<c:id>17</c:id>
+				</c:cliente>
+			</s:clientType>
 			<s:orderDate>2002-05-30T09:00:00</s:orderDate>
 			<s:line>
 				<sl:saleline>
@@ -42,55 +46,6 @@
 					<sl:lineTotal>30</sl:lineTotal>
 				</sl:saleline>
 				<sl:saleline>
-					<sl:id>10</sl:id>
-					<sl:produtos>
-						<p:produto>
-							<p:id>15</p:id>
-							<p:name>ricardo</p:name>
-							<p:productNumber>18</p:productNumber>
-							<p:color>azul</p:color>
-							<p:price>16.5</p:price>
-						</p:produto>
-					</sl:produtos>
-					<sl:unitPrice>30</sl:unitPrice>
-					<sl:order>1</sl:order>
-					<sl:lineTotal>40</sl:lineTotal>
-				</sl:saleline>
-				<sl:saleline>
-					<sl:id>10</sl:id>
-					<sl:produtos>
-						<p:produto>
-							<p:id>15</p:id>
-							<p:name>ricardo</p:name>
-							<p:productNumber>18</p:productNumber>
-							<p:color>azul</p:color>
-							<p:price>16.5</p:price>
-						</p:produto>
-					</sl:produtos>
-					<sl:unitPrice>30</sl:unitPrice>
-					<sl:order>1</sl:order>
-					<sl:lineTotal>40</sl:lineTotal>
-				</sl:saleline>
-			</s:line>
-			<s:taxAmt>16.5</s:taxAmt>
-			<s:subTotal>16.5</s:subTotal>
-			<s:total>16.5</s:total>
-		</s:saleType>
-		<s:saleType>
-			<s:id>16</s:id>
-			<l:loja>
-				<l:id>18</l:id>
-				<l:name>Joao</l:name>
-				<l:nif>267315228</l:nif>
-				<l:morada>ruamonte</l:morada>
-				<l:contactos>+910052980</l:contactos>
-			</l:loja>
-			<c:cliente>
-				<c:id>17</c:id>
-			</c:cliente>
-			<s:orderDate>2002-05-30T09:00:00</s:orderDate>
-			<s:line>
-				<sl:saleline>
 					<sl:id>13</sl:id>
 					<sl:produtos>
 						<p:produto>
@@ -105,37 +60,16 @@
 					<sl:order>3</sl:order>
 					<sl:lineTotal>30</sl:lineTotal>
 				</sl:saleline>
-				<sl:saleline>
-					<sl:id>10</sl:id>
-					<sl:produtos>
-						<p:produto>
-							<p:id>15</p:id>
-							<p:name>ricardo</p:name>
-							<p:productNumber>18</p:productNumber>
-							<p:color>azul</p:color>
-							<p:price>16.5</p:price>
-						</p:produto>
-					</sl:produtos>
-					<sl:unitPrice>30</sl:unitPrice>
-					<sl:order>1</sl:order>
-					<sl:lineTotal>40</sl:lineTotal>
-				</sl:saleline>
-				<sl:saleline>
-					<sl:id>10</sl:id>
-					<sl:produtos>
-						<p:produto>
-							<p:id>15</p:id>
-							<p:name>ricardo</p:name>
-							<p:productNumber>18</p:productNumber>
-							<p:color>azul</p:color>
-							<p:price>16.5</p:price>
-						</p:produto>
-					</sl:produtos>
-					<sl:unitPrice>30</sl:unitPrice>
-					<sl:order>1</sl:order>
-					<sl:lineTotal>40</sl:lineTotal>
-				</sl:saleline>
 			</s:line>
+			<s:currency>
+				<cd:currencydetails>
+					<cd:id>18</cd:id>
+					<cd:currencyRateDate>2002-05-30T09:00:00</cd:currencyRateDate>
+					<cd:fromCurrencyCode>EUR</cd:fromCurrencyCode>
+					<cd:toCurrencyCode>USD</cd:toCurrencyCode>
+					<cd:rateVal>1.004</cd:rateVal>
+				</cd:currencydetails>
+			</s:currency>
 			<s:taxAmt>16.5</s:taxAmt>
 			<s:subTotal>16.5</s:subTotal>
 			<s:total>16.5</s:total>
@@ -145,13 +79,6 @@
 		<ri:info>
 			<ri:dataInicio>2002-05-30T09:00:00</ri:dataInicio>
 			<ri:dataFim>2002-05-30T09:00:00</ri:dataFim>
-			<cd:currencydetails>
-				<cd:id>18</cd:id>
-				<cd:currencyRateDate>2002-05-30T09:00:00</cd:currencyRateDate>
-				<cd:fromCurrencyCode>EUR</cd:fromCurrencyCode>
-				<cd:toCurrencyCode>USD</cd:toCurrencyCode>
-				<cd:rateVal>1.004</cd:rateVal>
-			</cd:currencydetails>
 		</ri:info>
 	</information>
 </exerciseType>

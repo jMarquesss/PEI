@@ -6,24 +6,45 @@
 	xmlns:c="http://www.BikeOnTrack.pt/Cliente"
 	xmlns:l="http://www.BikeOnTrack.pt/Loja"
 	xmlns:sl="http://www.BikeOnTrack.pt/SaleLine"
+	xmlns:cd="http://www.BikeOnTrack.pt/CurrencyDetails"
 	elementFormDefault="qualified">
 
 	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
 	<xs:import schemaLocation="SaleLine.xsd" namespace="http://www.BikeOnTrack.pt/SaleLine"/>
 	<xs:import schemaLocation="Cliente.xsd" namespace="http://www.BikeOnTrack.pt/Cliente"/>
 	<xs:import schemaLocation="Loja.xsd" namespace="http://www.BikeOnTrack.pt/Loja"/>
+	<xs:import schemaLocation="CurrencyDetails.xsd" namespace="http://www.BikeOnTrack.pt/CurrencyDetails"/>
 
 	<xs:element name="saleType">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="id" type="ct:id"/>
-				<xs:element ref="l:loja"/>
-				<xs:element ref="c:cliente"/>
+				<xs:element name="lojaType">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="l:loja"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="clientType">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="c:cliente"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="orderDate" type="xs:dateTime"/>
 				<xs:element name="line">
 					<xs:complexType>
 						<xs:sequence minOccurs="1" maxOccurs="unbounded">
 							<xs:element ref="sl:saleline"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="currency">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="cd:currencydetails"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
