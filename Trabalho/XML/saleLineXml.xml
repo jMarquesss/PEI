@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<saleline xmlns="http://www.BikeOnTrack.pt/SaleLine"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/SaleLine SaleLine.xsd"
+	xmlns:p="http://www.BikeOnTrack.pt/Produto"
+	>
+	<id>13</id>
+	<produtos>
+		<p:produto>
+			<p:id>15</p:id>
+			<p:name>ricardo</p:name>
+			<p:productNumber>18</p:productNumber>
+			<p:color>azul</p:color>
+			<p:price>16.5</p:price>
+		</p:produto>
+	</produtos>
+	<unitPrice>10</unitPrice>
+	<order>3</order>
+	<lineTotal>30</lineTotal>
+</saleline>
+
+
+
+

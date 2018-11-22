@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<info xmlns="http://www.BikeOnTrack.pt/ReceiptInfo"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/ReceiptInfo ReceiptInfo.xsd"
+	xmlns:cd="http://www.BikeOnTrack.pt/CurrencyDetails"
+	>
+
+	<dataInicio>2002-05-30T09:00:00</dataInicio>
+	<dataFim>2002-05-30T09:00:00</dataFim>
+	<cd:currencydetails>
+		<cd:id>18</cd:id>
+		<cd:currencyRateDate>2002-05-30T09:00:00</cd:currencyRateDate>
+		<cd:fromCurrencyCode>EUR</cd:fromCurrencyCode>
+		<cd:toCurrencyCode>USD</cd:toCurrencyCode>
+		<cd:rateVal>1.004</cd:rateVal>
+	</cd:currencydetails>
+</info>

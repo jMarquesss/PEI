@@ -19,7 +19,7 @@ public class Xpath {
      */
     public static void main(String[] args) {
 
-        XMLManagement teste = new XMLManagement("C:\\Users\\ricar\\Desktop\\ESTG\\PEI\\Trabalho\\XML\\currencydetailsXml.xml", "C:\\Users\\ricar\\Desktop\\ESTG\\PEI\\Trabalho\\XSD\\CurrencyDetails.xsd");
+        XMLManagement teste = new XMLManagement("C:\\Users\\ricar\\Desktop\\ESTG\\PEI\\Trabalho\\XML\\exerciseXml.xml", "C:\\Users\\ricar\\Desktop\\ESTG\\PEI\\Trabalho\\XSD\\Exercise.xsd");
 
         teste.read(true);
         System.out.println(teste.validate(true));

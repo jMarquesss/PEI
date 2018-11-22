@@ -9,10 +9,10 @@
 
 	<xs:element name="produto">
 		<xs:complexType>
-			<xs:sequence>
+			<xs:sequence minOccurs="1">
 				<xs:element name="id" type="ct:id"/>
 				<xs:element name="name" type="ct:texto"/>
-				<xs:element name="productNumber" type="ct:texto"/>
+				<xs:element name="productNumber" type="ct:productNum"/>
 				<xs:element name="color" type="ct:texto"/>
 				<xs:element name="price" type="ct:valor"/>
 			</xs:sequence>
