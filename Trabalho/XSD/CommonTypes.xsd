@@ -13,7 +13,12 @@ elementFormDefault="qualified">
 	</xs:simpleType>
 	<xs:simpleType name="texto">
      	<xs:restriction base="xs:string">
-        	<xs:pattern value="([a-zA-Z])*"/>
+        	<xs:pattern value="([a-zA-Z ])*"/>
+     	</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="morada">
+     	<xs:restriction base="xs:string">
+        	<xs:pattern value="([a-zA-Z0-9 -])*"/>
      	</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="code">
@@ -37,12 +42,12 @@ elementFormDefault="qualified">
 	</xs:simpleType>
 	<xs:simpleType name="productNum">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="([a-zA-Z0-9])*"/>
+			<xs:pattern value="([a-zA-Z0-9-])*"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="telefone">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="([0-9])*"/>
+			<xs:pattern value="([0-9+])*"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="nif">

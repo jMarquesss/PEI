@@ -16,9 +16,9 @@
 			<s:id>16</s:id>
 			<l:loja>
 				<l:id>18</l:id>
-				<l:name>Joao</l:name>
+				<l:name>loja joao</l:name>
 				<l:nif>267315228</l:nif>
-				<l:morada>ruamonte</l:morada>
+				<l:morada>rua do monte n-124</l:morada>
 				<l:contactos>910052980</l:contactos>
 			</l:loja>
 			<c:cliente>
@@ -83,7 +83,7 @@
 				<l:name>Joao</l:name>
 				<l:nif>267315228</l:nif>
 				<l:morada>ruamonte</l:morada>
-				<l:contactos>910052980</l:contactos>
+				<l:contactos>+910052980</l:contactos>
 			</l:loja>
 			<c:cliente>
 				<c:id>17</c:id>
