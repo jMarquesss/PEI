@@ -7,13 +7,13 @@
 	>
 	<id>13</id>
 	<produtos>
-		<p:produto>
+		<produtoType>
 			<p:id>15</p:id>
 			<p:name>ricardo</p:name>
 			<p:productNumber>18</p:productNumber>
 			<p:color>azul</p:color>
 			<p:price>16.5</p:price>
-		</p:produto>
+		</produtoType>
 	</produtos>
 	<unitPrice>10</unitPrice>
 	<order>3</order>

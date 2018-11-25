@@ -7,15 +7,13 @@
 
 	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
 
-	<xs:element name="currencydetails">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="id" type="ct:id"/>
-				<xs:element name="currencyRateDate" type="xs:dateTime"/>
-				<xs:element name="fromCurrencyCode" type="ct:code"/>
-				<xs:element name="toCurrencyCode" type="ct:code"/>
-				<xs:element name="rateVal" type="ct:valor"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+	<xs:complexType name="currencydetails">
+		<xs:sequence>
+			<xs:element name="id" type="ct:id"/>
+			<xs:element name="currencyRateDate" type="xs:dateTime"/>
+			<xs:element name="fromCurrencyCode" type="ct:code"/>
+			<xs:element name="toCurrencyCode" type="ct:code"/>
+			<xs:element name="rateVal" type="ct:valor"/>
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>

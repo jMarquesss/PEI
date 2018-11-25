@@ -15,8 +15,8 @@
 				<xs:element name="id" type="ct:id"/>
 				<xs:element name="produtos">
 					<xs:complexType>
-						<xs:sequence minOccurs="1" maxOccurs="1">
-							<xs:element ref="p:produto"/>
+						<xs:sequence>
+							<xs:element name="produtoType" type="p:produto" minOccurs="1" maxOccurs="1"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>

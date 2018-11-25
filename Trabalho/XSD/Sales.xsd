@@ -19,17 +19,17 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="id" type="ct:id"/>
-				<xs:element name="lojaType">
+				<xs:element name="lojaInfo">
 					<xs:complexType>
-						<xs:sequence minOccurs="1" maxOccurs="1">
-							<xs:element ref="l:loja"/>
+						<xs:sequence>
+							<xs:element name="lojaType" type="l:loja" minOccurs="1" maxOccurs="1"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="clientType">
+				<xs:element name="clientInfo">
 					<xs:complexType>
-						<xs:sequence minOccurs="1" maxOccurs="1">
-							<xs:element ref="c:cliente"/>
+						<xs:sequence>
+							<xs:element name="clientType" type="c:cliente" minOccurs="1" maxOccurs="1"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -43,8 +43,8 @@
 				</xs:element>
 				<xs:element name="currency">
 					<xs:complexType>
-						<xs:sequence minOccurs="0" maxOccurs="1">
-							<xs:element ref="cd:currencydetails"/>
+						<xs:sequence>
+							<xs:element name="currencyType" type="cd:currencydetails" minOccurs="0" maxOccurs="1"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>

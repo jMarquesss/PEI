@@ -7,8 +7,7 @@
 
 	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
 
-	<xs:element name="loja">
-		<xs:complexType>
+		<xs:complexType name="loja">
 			<xs:sequence>
 				<xs:element name="id" type="ct:id"/>
 				<xs:element name="name" type= "ct:texto"/>
@@ -17,5 +16,4 @@
 				<xs:element name="contacto" type="ct:telefone"/>
 			</xs:sequence>
 		</xs:complexType>
-	</xs:element>
 </xs:schema>

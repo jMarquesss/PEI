@@ -5,12 +5,10 @@
 	elementFormDefault="qualified">
 
 
-	<xs:element name="info">
-		<xs:complexType>
+		<xs:complexType name="info">
 			<xs:sequence>
 				<xs:element name="dataInicio" type="xs:dateTime"/>
 				<xs:element name="dataFim" type="xs:dateTime"/>
 			</xs:sequence>
 		</xs:complexType>
-	</xs:element>
 </xs:schema>

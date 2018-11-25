@@ -7,16 +7,14 @@
 
 	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
 
-	<xs:element name="produto">
-		<xs:complexType>
-			<xs:sequence minOccurs="1">
-				<xs:element name="id" type="ct:id"/>
-				<xs:element name="name" type="ct:texto"/>
-				<xs:element name="productNumber" type="ct:productNum"/>
-				<xs:element name="color" type="ct:texto"/>
-				<xs:element name="price" type="ct:valor"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+	<xs:complexType name="produto">
+		<xs:sequence>
+			<xs:element name="id" type="ct:id"/>
+			<xs:element name="name" type="ct:texto"/>
+			<xs:element name="productNumber" type="ct:productNum"/>
+			<xs:element name="color" type="ct:texto"/>
+			<xs:element name="price" type="ct:valor"/>
+		</xs:sequence>
+	</xs:complexType>
 </xs:schema>
 
