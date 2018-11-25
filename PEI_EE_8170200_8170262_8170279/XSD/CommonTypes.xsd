@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns="http://www.BikeOnTrack.pt/CommonTypes"
+targetNamespace="http://www.BikeOnTrack.pt/CommonTypes"
+elementFormDefault="qualified">
+
+	<xs:simpleType name="valor">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0"/>
+			<xs:totalDigits value="15"/>
+			<xs:fractionDigits value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="texto">
+     	<xs:restriction base="xs:string">
+        	<xs:pattern value="([a-zA-Z 0-9,-])*"/>
+     	</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="morada">
+     	<xs:restriction base="xs:string">
+        	<xs:pattern value="([a-zA-Z0-9 -])*"/>
+     	</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="code">
+     	<xs:restriction base="xs:string">
+     		<xs:pattern value="[A-Z]{3}"/>
+     	</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="id">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:totalDigits value="10"/>
+			<xs:fractionDigits value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="number">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:totalDigits value="15"/>
+			<xs:fractionDigits value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="productNum">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([a-zA-Z0-9\- ])*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="telefone">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9+])*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="nif">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{9}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

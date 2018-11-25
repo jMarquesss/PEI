@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<info xmlns="http://www.BikeOnTrack.pt/ReceiptInfo"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/ReceiptInfo ReceiptInfo.xsd"
+	>
+
+	<dataInicio>2002-05-30T09:00:00</dataInicio>
+	<dataFim>2002-05-30T09:00:00</dataFim>
+</info>

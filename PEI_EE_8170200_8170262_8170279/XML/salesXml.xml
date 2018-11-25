@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<saleType xmlns="http://www.BikeOnTrack.pt/Sales"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.BikeOnTrack.pt/Sales Sales.xsd"
+	xmlns:c="http://www.BikeOnTrack.pt/Cliente"
+	xmlns:l="http://www.BikeOnTrack.pt/Loja"
+	xmlns:p="http://www.BikeOnTrack.pt/Produto"
+	xmlns:sl="http://www.BikeOnTrack.pt/SaleLine"
+	xmlns:cd="http://www.BikeOnTrack.pt/CurrencyDetails"
+	>
+
+	<id>16</id>
+	<lojaInfo>
+		<lojaType>
+			<l:id>18</l:id>
+			<l:name>Joao</l:name>
+			<l:nif>267315228</l:nif>
+			<l:morada>ruamonte</l:morada>
+			<l:contacto>910052980</l:contacto>
+		</lojaType>
+	</lojaInfo>
+	<clientInfo>
+		<clientType>
+			<c:id>17</c:id>
+			<c:nome>Pedro</c:nome>
+			<c:nif>241011647</c:nif>
+		</clientType>
+	</clientInfo>
+	<orderDate>2002-05-30T09:00:00</orderDate>
+	<line>
+		<sl:saleline>
+			<sl:id>18</sl:id>
+			<sl:produtos>
+				<sl:produtoType>
+					<p:id>15</p:id>
+					<p:name>ricardo</p:name>
+					<p:productNumber>18</p:productNumber>
+					<p:color>azul</p:color>
+					<p:price>16.5</p:price>
+				</sl:produtoType>
+			</sl:produtos>
+			<sl:unitPrice>10</sl:unitPrice>
+			<sl:order>3</sl:order>
+			<sl:lineTotal>30</sl:lineTotal>
+		</sl:saleline>
+	</line>
+	<currency>
+		<currencyType>
+			<cd:id>18</cd:id>
+			<cd:currencyRateDate>2002-05-30T09:00:00</cd:currencyRateDate>
+			<cd:fromCurrencyCode>EUR</cd:fromCurrencyCode>
+			<cd:toCurrencyCode>USD</cd:toCurrencyCode>
+			<cd:rateVal>1.004</cd:rateVal>
+		</currencyType>
+	</currency>
+	<taxAmt>16.5</taxAmt>
+	<subTotal>16.5</subTotal>
+	<total>16.5</total>
+</saleType>

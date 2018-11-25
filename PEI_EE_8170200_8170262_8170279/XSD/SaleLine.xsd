@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://www.BikeOnTrack.pt/SaleLine"
+	targetNamespace="http://www.BikeOnTrack.pt/SaleLine"
+	xmlns:ct="http://www.BikeOnTrack.pt/CommonTypes"
+	xmlns:p="http://www.BikeOnTrack.pt/Produto"
+	elementFormDefault="qualified">
+
+	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
+	<xs:import schemaLocation="Produto.xsd" namespace="http://www.BikeOnTrack.pt/Produto"/>
+
+	<xs:element name="saleline" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="ct:id"/>
+				<xs:element name="produtos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="produtoType" type="p:produto" minOccurs="1" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="unitPrice" type="ct:valor"/>
+				<xs:element name="order" type="ct:id"/>
+				<xs:element name="lineTotal" type="ct:valor"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
