@@ -43,7 +43,7 @@
 				</xs:element>
 				<xs:element name="currency">
 					<xs:complexType>
-						<xs:sequence minOccurs="1" maxOccurs="1">
+						<xs:sequence minOccurs="0" maxOccurs="1">
 							<xs:element ref="cd:currencydetails"/>
 						</xs:sequence>
 					</xs:complexType>
