@@ -121,6 +121,13 @@
 				</sl:saleline>
 			</s:line>
 			<s:currency>
+				<cd:currencydetails>
+					<cd:id>18</cd:id>
+					<cd:currencyRateDate>2002-05-30T09:00:00</cd:currencyRateDate>
+					<cd:fromCurrencyCode>EUR</cd:fromCurrencyCode>
+					<cd:toCurrencyCode>USD</cd:toCurrencyCode>
+					<cd:rateVal>1.004</cd:rateVal>
+				</cd:currencydetails>
 			</s:currency>
 			<s:taxAmt>1971.5149</s:taxAmt>
 			<s:subTotal>20565.6206</s:subTotal>
