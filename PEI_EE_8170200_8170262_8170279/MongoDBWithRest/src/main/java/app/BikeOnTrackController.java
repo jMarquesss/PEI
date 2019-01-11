@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BikeOnTrackController {
 
-    @RequestMapping("/getRestaurants")
-    public String getRestaurants(@RequestParam(value="value") String value) {
+    @RequestMapping("/getSalesFind")
+    public String getSalesFind(@RequestParam(value="value") String value) {
         MongoConnector mongo = new MongoConnector();
         String res = mongo.getData("peiTrabalho", "SalesDetails", "StoreName", value);
         return res;
