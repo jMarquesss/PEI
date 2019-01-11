@@ -46,7 +46,7 @@ public class BikeOnTrackController {
 
         //Valor por Loja
         //Valor Total de Produtos por Loja
-        String query10="[{$match:{StoreName: {$eq: '"+store+"'}}},{$group: {_id:\"$ReceiptID\",TotalProdutos:{$sum:\"$Quantity\"}}},{$sort:{TotalProdutos:1}}]";
+        String query10="[{$match:{StoreName: {$eq: '"+store+"'}}},{$group: {_id:\"$ReceiptID\",TotalProdutosVenda:{$sum:\"$Quantity\"}}},{$group:{_id:TotalProdutos, Resultado:{$sum:\"$TotalProdutosVenda\"}}},{$sort:{TotalProdutos:1}}]";
         //Total de Vendas Por Loja
         String query11="[{$match:{StoreName: {$eq: '"+store+"'}}},{$group: {_id:\"$ReceiptID\",Total:{$sum:\"$LineTotal\"}}},{$group:{_id:VendasTotais, Resultado:{$sum:\"$Total\"}}},{$sort:{Resultado:1}}]";
         //Valor Médio do Preço dos Produtos por Loja

@@ -63,7 +63,8 @@ Por Loja
 
 Valor Total de Produtos por Loja
 query10=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"}}},
-{$group: {_id:"$ReceiptID",TotalProdutos:{$sum:"$Quantity"}}},
+{$group: {_id:"$ReceiptID",TotalProdutosVenda:{$sum:"$Quantity"}}},
+{$group:{_id:TotalProdutos, Resultado:{$sum:"$TotalProdutosVenda"}}}
 {$sort:{TotalProdutos:1}}])
 
 Total de Vendas Por Loja
