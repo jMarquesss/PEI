@@ -1,0 +1,77 @@
+Querys
+
+Por Venda
+
+Total de produtos vendidos
+query1=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"}}},
+{$group: {_id:"$ReceiptID",Total:{$sum:"$Quantity"}}},
+{$sort:{Total:1}}])
+
+Total de Produtos diferentes
+query2=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"}}},
+{$group:{_id:"$ReceiptID",Total:{$sum:1}}},
+{$sort:{Total:1}}])
+
+Media de preço dos produtos vendidos
+query3=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"}}},
+{$group: {_id:"$ReceiptID",MediaPrecoProduto:{$avg:"$UnitPrice"}}},
+{$sort:{MediaPrecoProduto:1}}])
+
+
+Por Exercicio
+
+Total de Produtos Vendidos
+query4=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"},
+OrderDate:{$gte:'ano-mes-01 00:00:00.000',$lte:'ano-mes-31 00:00:00.000'}}},
+{$group: {_id:"TotalProdutos",
+Total:{$sum:"$Quantity"}}},
+{$sort:{Total:1}}])
+
+Total de Produtos Diferentes
+query5=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"},
+OrderDate:{$gte:'ano-mes-01 00:00:00.000',$lte:'ano-mes-31 00:00:00.000'}}},
+{$group:{_id:"$ProductID"}},
+{$group:{_id:"TotalProdutosDiferentes",Total:{$sum:1}}},
+{$sort:{Total:1}}])
+
+Total Clientes diferentes
+query6=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"},
+OrderDate:{$gte:'ano-mes-01 00:00:00.000',$lte:'ano-mes-31 00:00:00.000'}}}, 
+{$group:{_id:"$Customer"}},
+{$group:{_id:"NumerosClientesDiferentes",Total:{$sum:1}}},
+{$sort:{Total:1}}])
+
+Valor vendido por Cliente
+query7=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"},
+OrderDate:{$gte:'ano-mes-01 00:00:00.000',$lte:'ano-mes-31 00:00:00.000'}}},
+{$group: {_id:"$Customer",TotalVendidoCliente:{$sum:"$LineTotal"}}},
+{$sort:{TotalVendidoCliente:-1}}])
+
+Total de Unidades vendidas por Produto
+query8=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"},
+OrderDate:{$gte:'ano-mes-01 00:00:00.000',$lte:'ano-mes-31 00:00:00.000'}}},
+{$group: {_id:"$ProductID",TotalProdutosVendidos:{$sum:"$Quantity"}}},
+{$sort:{TotalProdutosVendidos:-1}}])
+
+Valor vendido por moeda
+query9=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"},
+OrderDate:{$gte:'ano-mes-01 00:00:00.000',$lte:'ano-mes-31 00:00:00.000'}}},
+{$group: {_id:"$CurrencyRateID",TotalVendidoMoeda:{$sum:"$LineTotal"}}}])
+
+
+Por Loja
+
+Valor Total de Produtos por Loja
+query10=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"}}},
+{$group: {_id:"$ReceiptID",TotalProdutos:{$sum:"$Quantity"}}},
+{$sort:{TotalProdutos:1}}])
+
+Total de Vendas Por Loja
+query11=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"}}},
+{$group: {_id:"$ReceiptID",Total:{$sum:"$LineTotal"}}},
+{$group:{_id:VendasTotais, Resultado:{$sum:"$Total"}}},
+{$sort:{Resultado:1}}])
+
+Valor Médio do Preço dos Produtos por Loja
+query12=db.SalesDetails.aggregate([{$match:{StoreName: {$eq: "+store+"}}},
+{$group: {_id:"$StoreName",ValorMedioProduto:{$avg:"$UnitPrice"}}}])
