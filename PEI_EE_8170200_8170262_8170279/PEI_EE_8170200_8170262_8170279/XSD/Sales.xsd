@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://www.BikeOnTrack.pt/Sales"
+	targetNamespace="http://www.BikeOnTrack.pt/Sales"
+	xmlns:ct="http://www.BikeOnTrack.pt/CommonTypes"
+	xmlns:sl="http://www.BikeOnTrack.pt/SaleLine"
+	xmlns:c="http://www.BikeOnTrack.pt/Cliente"
+	elementFormDefault="qualified">
+
+	<xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.BikeOnTrack.pt/CommonTypes"/>
+	<xs:import schemaLocation="SaleLine.xsd" namespace="http://www.BikeOnTrack.pt/SaleLine"/>
+	<xs:import schemaLocation="Cliente.xsd" namespace="http://www.BikeOnTrack.pt/Cliente"/>
+	
+
+		<xs:complexType name="saleType">
+			<xs:sequence>
+				<xs:element name="id" type="ct:id"/>
+				<xs:element name="clientInfo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="clientType" type="c:cliente" minOccurs="1" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="orderDate" type="xs:dateTime"/>
+				<xs:element name="line">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="saleLineType" type="sl:saleline" minOccurs="1" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="taxAmt" type="ct:valor"/>
+				<xs:element name="subTotal" type="ct:valor"/>	
+				<xs:element name="total" type="ct:valor"/>
+				<xs:element name="nrTotalProdutos" type="ct:id"/>
+				<xs:element name="nrTotalProdutosDiferentes" type="ct:id"/>
+				<xs:element name="mediaPreco" type="ct:valor"/>
+			</xs:sequence>
+		</xs:complexType>
+</xs:schema>
